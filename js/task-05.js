@@ -1,5 +1,5 @@
-const textInput = document.querySelector(".name-input");
-const output = document.querySelector(".name-output");
+const textInput = document.querySelector(`#name-input`);
+const output = document.querySelector(`#name-output`);
 
 textInput.addEventListener("input", (name) => {
     output.textContent = name.currentTarget.value;
