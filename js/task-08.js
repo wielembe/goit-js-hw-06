@@ -1,12 +1,12 @@
 const form = document.querySelector(".login-form");
 const loginData = {};
 
-const submit = (onClick) => {
-    onClick.preventDefault();
+const submit = (event) => {
+    event.preventDefault();
 
     const {
         elements: { email, password },
-    } = onClick.currentTarget;
+    } = event.currentTarget;
     if (email.value === "" || password.value === "") {
         return alert("Uzupełnij wszystkie pola!");
     }
